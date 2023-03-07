@@ -60,7 +60,9 @@
               + element.iso + '</td><td>' + element.latitude + '</td><td>' + element.longitude + '</td><td>' 
               + element.name + '</td><td>' + element.population + '</td></tr>');
           });
-        })
+        });
+        results.fail(function (jqXHR) { console.log("Error: " + jqXHR.status); });
+        results.always(function () { console.log("done"); });
       });
     </script>
 
