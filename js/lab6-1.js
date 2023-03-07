@@ -24,7 +24,6 @@ window.addEventListener('load', () => {
     $('span#message').text("The mouse has left.");
   });
 
-  console.log($('#stories img'))
   $('#stories img').each((index, element) => {
     $(element).on('mouseover', (event) => {
       var alt = $(element).attr('alt'); 
